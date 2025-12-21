@@ -68,4 +68,12 @@ Este projeto foi construído utilizando a stack de Data Science do Python:
 
 ---
 
+## ⚖️ Aviso Legal (Disclaimer)
+Este projeto foi desenvolvido para fins **educacionais e acadêmicos**.
+* As análises e simulações (Monte Carlo) apresentadas são baseadas em dados históricos e modelos estatísticos.
+* **Não constitui recomendação de investimento.** Retornos passados não garantem retornos futuros.
+* O autor não se responsabiliza por decisões financeiras tomadas com base nestas informações.
+
+---
+
 ###### Autor: Igor Carvalho - Análise desenvolvida para o curso de Estatística (Anhembi Morumbi).
