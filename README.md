@@ -1,1 +1,66 @@
-📈 Dashboard de Inteligência Financeira & RiscoUma abordagem estatística sobre o mercado brasileiroPara quem é este projeto?Para investidores, estudantes e gestores que desejam ir além do "achismo" e tomar decisões baseadas em dados (Data-Driven Decision Making).🎯 1. O Que Este Painel Faz?Este laboratório digital conecta-se diretamente à Bolsa de Valores (B3) para realizar três tarefas complexas em tempo real:Diagnóstico: Como os setores estão performando (Base 100).Raio-X de Risco: Quem oscila mais? Quem compensa o risco?Clarividência (Simulação): Utiliza o método de Monte Carlo para projetar milhares de futuros possíveis e definir um intervalo de confiança para o preço de uma ação.🧭 2. Manual de Bordo (Como Interpretar)Para facilitar a leitura, traduzimos os conceitos estatísticos complexos para uma linguagem de negócios:Conceito TécnicoO que aparece na telaTradução para a Vida RealVolatilidadeEixo X do gráfico "Risco vs Retorno"A Montanha-Russa. Quanto maior a volatilidade, mais o preço chacoalha. É o "Índice de Emoção" (e perigo) do ativo.DrawdownGráfico de Área (Vermelho/Cinza)O Buraco. Mostra a distância entre o preço atual e o preço máximo histórico. Responde: "Quanto eu estaria perdendo se tivesse comprado no pico?"CorrelaçãoHeatmap e Scatter PlotA Dança. Se for +1, os ativos dançam juntos (sobem juntos). Se for -1, um sobe e o outro desce (proteção).Monte CarloO Cone Azul (Fan Chart)O Multiverso. O computador simula 1.000 cenários futuros. A área azul é onde o preço tem 95% de chance de estar.🧪 3. Laboratório: 3 Experiências para Você TestarNão sabe por onde começar? Siga estas "receitas" para extrair insights valiosos do dashboard agora mesmo:🧪 Experiência A: "A Guerra dos Bancos"Objetivo: Descobrir se vale a pena correr o risco dos Bancos Digitais.Configuração:Grupo A: Selecione Bancos Digitais (Nubank, Inter).Grupo B: Selecione Bancos Tradicionais (Itaú, Bradesco).O que observar:Olhe o gráfico Risco vs Retorno.Hipótese: O Nubank provavelmente estará mais alto (mais retorno), mas muito mais à direita (mais risco/volatilidade) que o Itaú. O usuário deve se perguntar: "Esse retorno extra paga a minha insônia?"🧪 Experiência B: "O Efeito Juros no Varejo"Objetivo: Entender por que a Magalu sofre tanto.Configuração:Grupo A: Selecione Varejo (Risco).Grupo B: Selecione Macro (Dólar/Ibov).O que observar:Olhe o gráfico de Drawdown.Hipótese: Você verá que enquanto o Ibovespa cai 10% ou 15% em crises, o Varejo chega a cair 80% ou 90%. Isso ilustra o conceito de "Beta Alto" (sensibilidade extrema à economia).🧪 Experiência C: "Prevendo o Futuro do Nubank"Objetivo: Usar estatística para projetar preço.Configuração:Vá até o final da página (Laboratório Preditivo).Selecione Nubank (ROXO34) e defina o prazo para 180 dias.O que observar:O Cone Azul.Veja o valor do "Cenário Pessimista" (texto em vermelho).Insight: Se o cenário pessimista for aceitável para você, o investimento é considerado seguro segundo a sua tolerância a risco.📊 4. Glossário de Métricas (Tabela KPI)Na tabela no canto inferior direito, você verá números "crus". Veja como ler:Sharpe Ratio: É a nota da ação.Acima de 1.0: Excelente. O risco valeu a pena.Entre 0 e 1.0: Ok. Pagou as contas.Negativo: Péssimo. Você correu risco para perder dinheiro.VaR (95%): O limite de perda diária.Se o VaR for -4%, significa: "Prepare-se, pois existe uma chance real de cair 4% em um único dia."🛠 Tecnologias e BibliotecasEste projeto foi construído utilizando a stack de Data Science do Python:Dash & Plotly: Para a construção da interface web interativa e gráficos dinâmicos.Yfinance: API para extração de dados históricos da B3 e Nasdaq.Pandas & NumPy: Para manipulação de dados e cálculos vetoriais.SciPy: Para modelagem estatística e geração de números aleatórios (distribuição normal).Autor: Igor Carvalho - Análise desenvolvida para o curso de Estatística (Anhembi Morumbi).
+# 📈 Dashboard de Inteligência Financeira & Risco
+> **Uma abordagem estatística sobre o mercado brasileiro**
+
+Este projeto é um laboratório digital que se conecta à B3 para transformar dados brutos em decisões fundamentadas (**Data-Driven Decision Making**), ideal para investidores e estudantes de finanças.
+
+---
+
+## 🎯 1. O Que Este Painel Faz?
+
+O sistema realiza três tarefas complexas em tempo real:
+
+1.  **Diagnóstico:** Performance setorial comparada (Base 100).
+2.  **Raio-X de Risco:** Análise de oscilação e relação risco-retorno.
+3.  **Clarividência (Simulação):** Utiliza o método de **Monte Carlo** para projetar milhares de futuros possíveis, definindo intervalos de confiança.
+
+
+
+---
+
+## 🧭 2. Manual de Bordo (Como Interpretar)
+
+Traduzimos conceitos estatísticos para linguagem de negócios para facilitar sua análise:
+
+| Conceito Técnico | Visualização | Tradução para a Vida Real |
+| :--- | :--- | :--- |
+| **Volatilidade** | Eixo X | **A Montanha-Russa:** Quanto maior, mais o preço "chacoalha". É o índice de emoção do ativo. |
+| **Drawdown** | Gráfico de Área | **O Buraco:** A distância entre o preço atual e a máxima histórica. "Quanto eu estaria perdendo se tivesse comprado no pico?" |
+| **Correlação** | Heatmap | **A Dança:** +1 significa que dançam juntos; -1 significa proteção (quando um sobe, o outro desce). |
+| **Monte Carlo** | Cone Azul | **O Multiverso:** 1.000 cenários futuros. A área azul mostra onde há 95% de chance do preço estar. |
+
+---
+
+## 🧪 3. Laboratório: Experiências para Testar
+
+Siga estas "receitas" para extrair insights imediatos:
+
+### 🧪 Experiência A: "A Guerra dos Bancos"
+* **Objetivo:** Comparar Bancos Digitais vs. Tradicionais.
+* **Ação:** Selecione Nubank/Inter e Itaú/Bradesco.
+* **Insight:** Observe se o retorno extra dos digitais compensa a volatilidade (posição à direita no gráfico).
+
+### 🧪 Experiência B: "O Efeito Juros no Varejo"
+* **Objetivo:** Entender a sensibilidade do setor varejista.
+* **Ação:** Compare Magalu (MGLU3) com o Ibovespa (IBOV).
+* **Insight:** Note o **Drawdown** agressivo do varejo em crises, ilustrando o conceito de "Beta Alto".
+
+---
+
+## 📊 4. Glossário de Métricas (KPIs)
+
+| Métrica | O que nos diz? |
+| :--- | :--- |
+| **Sharpe Ratio** | A "nota" da ação. Acima de 1.0 é excelente; negativo significa que o risco não compensou. |
+| **VaR (95%)** | O limite de perda diária provável. Ex: -4% significa que há uma chance real de cair 4% em um dia. |
+
+---
+
+## 🛠 Tecnologias
+* **Dash & Plotly:** Interface e gráficos dinâmicos.
+* **Yfinance:** Extração de dados da B3/Nasdaq.
+* **Pandas & NumPy:** Cálculos vetoriais e manipulação de dados.
+* **SciPy:** Modelagem estatística e Distribuição Normal.
+
+---
+**Autor:** Igor Carvalho  
+*Análise desenvolvida para o curso de Estatística (Anhembi Morumbi).*
