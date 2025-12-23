@@ -76,8 +76,3 @@ O autor não se responsabiliza por quaisquer decisões financeiras tomadas com b
 
 **Autor:** Igor Carvalho  
 *Análise desenvolvida para o curso de Estatística (Anhembi Morumbi).*
-
-
----
-**Autor:** Igor Carvalho  
-*Análise desenvolvida para o curso de Estatística (Anhembi Morumbi).*
