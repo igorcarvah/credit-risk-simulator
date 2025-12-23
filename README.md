@@ -62,5 +62,22 @@ Siga estas "receitas" para extrair insights imediatos:
 * **SciPy:** Modelagem estatística e Distribuição Normal.
 
 ---
+
+## ⚠️ Disclaimer (Aviso Legal)
+
+**Este projeto tem fins estritamente educacionais e didáticos.** As análises, simulações e dados apresentados neste dashboard:
+* **Não constituem recomendação de investimento** (compra, venda ou manutenção de ativos).
+* São baseados em dados históricos, e **performance passada não é garantia de resultados futuros**.
+* Utilizam modelos estatísticos (como Monte Carlo) que trabalham com probabilidades, não com certezas.
+
+O autor não se responsabiliza por quaisquer decisões financeiras tomadas com base nas informações visualizadas nesta ferramenta. Consulte sempre um profissional de investimentos certificado.
+
+---
+
+**Autor:** Igor Carvalho  
+*Análise desenvolvida para o curso de Estatística (Anhembi Morumbi).*
+
+
+---
 **Autor:** Igor Carvalho  
 *Análise desenvolvida para o curso de Estatística (Anhembi Morumbi).*
